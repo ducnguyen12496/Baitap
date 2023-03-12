@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            background-color: red;
+            color: white;
+            text-align: center;
+            width: 100%;
+            margin: 5px;
+            font-weight: 1;
+            padding: 2px;
+
+        }
+        .table1{
+            border: 10px solid rgb(84, 157, 190);
+            padding: 0px;
+            width: 550px;
+            height: 200px;
+        }
+        .t1{
+            float: left;
+            width: 30%;
+            text-align: right;
+            line-height: 30%;
+            color: blue;
+        }
+        .t2{
+            float: right;
+            text-align: left;
+            width: 70%;
+            line-height: 30%;
+            color: orange;
+        }
+        .table2 h3{
+            color: blue;
+            background-color: rgb(162, 236, 214);
+            text-align: left;
+        }
+        .table2{
+            background-color: rgb(223, 247, 176);
+            width: 550px;
+            height: 250px;
+        }
+        .a1{
+            color: blue;
+            text-align: left;
+            float: left;
+            width: 20%;
+            line-height: 10px;
+
+        }
+        .a2{
+            float: left;
+            text-align: left;
+            width: 80%;
+            line-height: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+<DIV class="table1">
+    <form action="" >
+
+        <h3>SỞ THÍCH CỦA BẠN</h3>
+        <div class="t1">
+            <p>Họ và tên</p> 
+            <p>Email</p> 
+            <p>Sở thích</p> 
+        </div>
+        <div class="t2">
+            <br>
+            <br>
+            <input type="text" size="30"><br>
+            <input type="email" size="20" ><br>
+            <input type="checkbox"> Thể thao 
+            <input type="checkbox"> Âm nhạc
+            <input type="checkbox"> Đọc Sách <br>
+            <input type="checkbox"> Lướt web
+            <input type="checkbox"> Chơi game 
+            <input type="checkbox"> Điện ảnh <br>
+            <input type="checkbox"> Du lịch <br>
+            <input type="submit" value="Gửi thông tin">
+            <input type="reset" value="Nhập lại">
+        </div>
+    </form>
+
+</DIV>
+<DIV class="table2">
+        <form action="" >
+            <h3>ĐĂNG KÍ HỌC VIÊN</h3>
+            <div class="a1">
+                <p>Họ và tên</p> 
+                <p>Ngày sinh</p> 
+                <p>Giới tính</p> 
+                <p>Địa chỉ</p> 
+                <p>Lớp</p> 
+                <p>Email</p> 
+                <p>Điện thoại</p> 
+            </div>
+            <div class="a2">
+                <br>
+                <input type="text" size="30"><br><br>
+                <input type="number" size="20"><br>
+                <input type="radio" name="gioitinh"> Nam 
+                <input type="radio" name="gioitinh"> Nữ<br><br>
+                <input type="text"><br><br>
+                <select name="Chọn lớp">
+                    <option>Lớp1</option>
+                    <option>Lớp1</option>
+                    <option>Lớp1</option>
+                    <option>Lớp1</option>
+                </select><br>
+                <input type="email"><br><br>
+                <input type="number"> <br>
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </form>
+</DIV>
+
+
+</body>
+</html>
