@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nền tảng căn bản về HTML5 đầu tiên - nentang.vn</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="nền tảng, nen tang, học web, html5, html, css, js, hoc web can ban, học web căn bản" />
+    <meta name="description" content="Cung cấp nền tảng kiến thức căn bản về lập trình web HTML5, CSS3, JS" />
+  </head>
+  <body>	    	
+	<script>
+		var arrayInt = [];
+		arrayInt[0] = parseInt(prompt("Nhap so nguyen 1"))
+		arrayInt[1] = parseInt(prompt("Nhap so nguyen 2"))
+		arrayInt[2] = parseInt(prompt("Nhap so nguyen 3"))
+		arrayInt[3] = parseInt(prompt("Nhap so nguyen 4"))
+		arrayInt[4] = parseInt(prompt("Nhap so nguyen 5"))
+
+		for (let i = 0;i < arrayInt.length; i++){ 
+		console.log("Cac gia tri cua mang la: " + arrayInt[i]);
+		}
+		console.log("-------------------------------------------")
+
+		var sumSoChan = 0;
+		for (let i = 0;i < arrayInt.length; i++){ 
+		if(arrayInt[i] % 2 == 0){
+		sumSoChan += arrayInt[i];
+		console.log("So chan trong mang la: " + arrayInt[i])};
+		};
+		console.log(sumSoChan);
+		
+		console.log("-------------------------------------------")
+		var sumSoLe = 0;
+		for (let i = 0;i < arrayInt.length; i++){ 
+		if(arrayInt[i] % 2 != 0){
+		sumSoLe += arrayInt[i];
+		console.log("So le trong mang la: " + arrayInt[i])};
+		};
+		console.log(sumSoLe);
+		
+		console.log("-------------------------------------------")
+		var check = true;
+		for(i = 0; i < arrayInt.length; i++){
+			for(j = 2; j < arrayInt[i]; j++){
+				if(arrayInt[i] % j == 0){
+				check = fale;
+				break;
+				}
+			}
+		}
+		if(check == false){
+			console.log("So nguyen to trong mang: " + arrayInt[i])
+		}
+		
+		console.log("-------------------------------------------")
+		for(i = 0; i < arrayInt.length; i++){
+			for(j = i+1; i <)
+				if(arrayInt[i] > arrayInt[i+1]){
+
+				}
+		}
+		
+	</script>
+    
+  </body>
+</html>
