@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BTVN-1</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="nền tảng, nen tang, học web, html5, html, css, js, hoc web can ban, học web căn bản" />
+    <meta name="description" content="Cung cấp nền tảng kiến thức căn bản về lập trình web HTML5, CSS3, JS" />
+  </head>
+  <body>	    	
+	<script>
+		var arrayInt = [];
+		arrayInt[0] = parseInt(prompt("Nhap so nguyen 1"))
+		arrayInt[1] = parseInt(prompt("Nhap so nguyen 2"))
+		arrayInt[2] = parseInt(prompt("Nhap so nguyen 3"))
+		arrayInt[3] = parseInt(prompt("Nhap so nguyen 4"))
+		arrayInt[4] = parseInt(prompt("Nhap so nguyen 5"))
+
+		for (let i = 0;i < arrayInt.length; i++){ 
+		console.log("Cac gia tri cua mang la: " + arrayInt[i]);
+		}
+		console.log("-------------------------------------------")
+
+		var sumSoChan = 0;
+		for (let i = 0;i < arrayInt.length; i++){ 
+		if(arrayInt[i] % 2 == 0){
+		sumSoChan += arrayInt[i];
+		console.log("So chan trong mang la: " + arrayInt[i])};
+		};
+		console.log(sumSoChan);
+		
+		console.log("-------------------------------------------")
+		var sumSoLe = 0;
+		for (let i = 0;i < arrayInt.length; i++){ 
+		if(arrayInt[i] % 2 != 0){
+		sumSoLe += arrayInt[i];
+		console.log("So le trong mang la: " + arrayInt[i])};
+		};
+		console.log(sumSoLe);
+		
+		console.log("-------------------------------------------")
+		var check = true;
+		for(i = 0; i < arrayInt.length; i++){
+			for(j = 2; j < arrayInt[i]; j++){
+				if(arrayInt[i] % j == 0){
+				break;
+				}else{
+					console.log("So nguyen to trong mang: " + arrayInt[i])}
+				
+			}
+		}
+		
+		console.log("-------------------------------------------")
+		var max = 0;
+		for(i = 0; i < arrayInt.length; i++){
+			if(max < arrayInt[i]){
+			max = arrayInt[i];
+			}
+		}
+		console.log("Gia tri Max trong mang la:" + max);
+
+
+		console.log("-------------------------------------------")
+		var min = arrayInt[0];
+		for(i = 1; i < arrayInt.length; i++){
+			if(min > arrayInt[i]){
+			min = arrayInt[i];
+			}
+		}
+		console.log("Gia tri Min trong mang la:" + min);
+
+
+
+		console.log("-------------------------------------------")
+		arrayInt.sort((a,b) => a-b);
+		console.log("Ket Qua mang sau khi sap xep tang dan(su dung Sort): " + arrayInt);
+
+
+		console.log("-------------------------------------------")
+		for (let i = 0; i < arrayInt.length - 1; i++) {
+    			for (let j = i + 1; j < arrayInt.length; j++) {
+      			if (arrayInt[j] < arrayInt[i]) {
+        		let t = arrayInt[i];
+       			arrayInt[i] = arrayInt[j];
+        		arrayInt[j] = t;
+      			}
+    		    }
+  		}
+		console.log("Ket Qua mang sau khi sap xep tang dan: " + arrayInt)
+
+		
+	</script>
+    
+  </body>
+</html>
